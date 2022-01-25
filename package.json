@@ -1,6 +1,6 @@
 {
   "name": "@jacksontoomey/lemonsqueezy",
-  "version": "0.0.1-d",
+  "version": "0.1.0",
   "description": "Utilities for my projects",
   "repository": "git://github.com/JacksonToomey/lemonsqueezy.git",
   "main": "./lib/index.js",
@@ -13,8 +13,15 @@
   "license": "ISC",
   "publishConfig": {
     "@jacksontoomey:registry": "https://npm.pkg.github.com"
-  }, 
+  },
   "devDependencies": {
+    "@types/react": "^17.0.38",
     "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "@hookform/resolvers": "^2.8.8",
+    "easy-peasy": "^5.0.4",
+    "react-hook-form": "^7.25.0",
+    "yup": "^0.32.11"
   }
 }
