@@ -1,3 +1,5 @@
 export * from './types';
-export * from './forms';
-export * from './resources';
+export { useForm } from './forms';
+import resourceModelFactory from './resources';
+
+export const createResourceModel = resourceModelFactory;
