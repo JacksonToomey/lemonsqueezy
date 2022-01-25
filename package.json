@@ -1,6 +1,6 @@
 {
   "name": "@jacksontoomey/lemonsqueezy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Utilities for my projects",
   "repository": "git://github.com/JacksonToomey/lemonsqueezy.git",
   "main": "./lib/index.js",

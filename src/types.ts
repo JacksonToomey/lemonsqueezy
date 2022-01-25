@@ -48,23 +48,23 @@ export interface ResourceModel<RT extends Resource, SM extends object> {
   resources: ResourceStore<RT>
   requests: ResourceRequests
   lists: ResourceLists
-  readRequest: Action<this, ReadRequestStartPayload>
-  completeReadRequest: Action<this, ReadRequestCompletePayload<RT>>
-  deleteRequest: Action<this, DeleteRequestStartPayload>
-  completeDeletRequest: Action<this, DeleteRequestCompletePayload>
-  updateResource: Action<this, UpdateResourcePayload<RT>>
+  readRequest: Action<ResourceModel<RT, SM>, ReadRequestStartPayload>
+  completeReadRequest: Action<ResourceModel<RT, SM>, ReadRequestCompletePayload<RT>>
+  deleteRequest: Action<ResourceModel<RT, SM>, DeleteRequestStartPayload>
+  completeDeletRequest: Action<ResourceModel<RT, SM>, DeleteRequestCompletePayload>
+  updateResource: Action<ResourceModel<RT, SM>, UpdateResourcePayload<RT>>
   getResources: Computed<
-  this,
+  ResourceModel<RT, SM>,
   (listName: string) => RT[],
   SM
   >
   getResource: Computed<
-  this,
+  ResourceModel<RT, SM>,
   (id: number | null) => RT | null,
   SM
   >
   getRequestStatus: Computed<
-  this,
+  ResourceModel<RT, SM>,
   (key: string) => Status,
   SM
   >
