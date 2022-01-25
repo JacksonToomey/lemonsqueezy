@@ -2,6 +2,7 @@
   "name": "@jacksontoomey/lemonsqueezy",
   "version": "0.0.1",
   "description": "Utilities for my projects",
+  "repository": "git://github.com/JacksonToomey/lemonsqueezy.git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
