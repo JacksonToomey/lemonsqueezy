@@ -1,6 +1,6 @@
 {
   "name": "@jacksontoomey/lemonsqueezy",
-  "version": "0.0.1-c",
+  "version": "0.0.1-d",
   "description": "Utilities for my projects",
   "repository": "git://github.com/JacksonToomey/lemonsqueezy.git",
   "main": "./lib/index.js",
@@ -11,6 +11,9 @@
   },
   "author": "",
   "license": "ISC",
+  "publishConfig": {
+    "@jacksontoomey:registry": "https://npm.pkg.github.com"
+  }, 
   "devDependencies": {
     "typescript": "^4.5.5"
   }
