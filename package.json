@@ -16,7 +16,11 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.38",
-    "typescript": "^4.5.5"
+    "typescript": "^4.5.5",
+    "@hookform/resolvers": "^2.8.8",
+    "easy-peasy": "^5.0.4",
+    "react-hook-form": "^7.25.0",
+    "yup": "^0.32.11"
   },
   "peerDependencies": {
     "@hookform/resolvers": "^2.8.8",
