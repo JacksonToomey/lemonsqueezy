@@ -1,9 +1,10 @@
 {
   "name": "@jacksontoomey/lemonsqueezy",
-  "version": "0.0.1-a",
+  "version": "0.0.1-c",
   "description": "Utilities for my projects",
   "repository": "git://github.com/JacksonToomey/lemonsqueezy.git",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/types.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
