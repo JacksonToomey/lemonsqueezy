@@ -61,7 +61,7 @@ export default <RT extends Resource, SM extends object>(): ResourceModel<RT, SM>
     [
       (state) => state.resources,
     ],
-    (resources) => (id: number | null) => ((id && resources[id]) ? resources[id] : null),
+    (resources) => (id: string | null) => ((id && resources[id]) ? resources[id] : null),
   ),
   getRequestStatus: computed(
     [
