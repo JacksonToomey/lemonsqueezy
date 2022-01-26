@@ -60,7 +60,7 @@ export interface ResourceModel<RT extends Resource, SM extends object> {
   >
   getResource: Computed<
   ResourceModel<RT, SM>,
-  (id: number | null) => RT | null,
+  (id: string | null) => RT | null,
   SM
   >
   getRequestStatus: Computed<
